@@ -1,10 +1,10 @@
-디자인패턴
+Design Pattern C++
 ----------
 
--	출처 : CODENURI 강의교재
-- 날짜 : 2017.7.7
+* Author : CODENURI lecture book
+* Date : 2017.7.7
 
-#### 변하는 것과 변하지 않는 것의 분리
+# Separation of between things to be changed and not changed
 
 1.  Template method
 
@@ -12,18 +12,18 @@
     class EditBox
     {
     public:
-      virtual bool validate(char c){return isdigit(c);} //~ 가상함수
+      virtual bool validate(char c){return isdigit(c);} //~ virtual function
       string getData()
       {
           ...
-          if( validate(c)) //~ 변하는 부분
+          if( validate(c)) //~ things to be changed
             ~~~
       }
     };
     class AddressEdit : public EditBox
     {
     public:
-      virtual bool validate(char c) //~ 재정의
+      virtual bool validate(char c) //~ re definition
       {
         if( 'b'<c && c<'m' )
           return true;
@@ -38,12 +38,9 @@
       cout << s << endl;    
     }
     ````
-
-    이와 같이 변하는 부분 validate를 가상함수로 선언하고,
-
-    파생클래스에서 재정의하면 됨
-
-    객체가 아닌 클래스 자체에 대한 변경임
+You should set validate (that can be changed) to virtual function  
+and redefine it in derived class  
+It is the chanse of class itself not object
 
 2.	Strategy
 
@@ -57,14 +54,14 @@
    {
      IValidator* pVal = 0;
    public:
-     void setValidator(IValidator* p) {pVal = p;} //~ 변하는 부분(validate함수) 설정해줌
+     void setValidator(IValidator* p) {pVal = p;} //~ Things to be changed (validate function) 
    }
-   class LimitDigitValidator : public IValidator //~ Validation 정책 담은 정책 class
+   class LimitDigitValidator : public IValidator //~ policy class including validation policy
    {
      int value;
    public:
      LimitDigitValidator(int v) : value(v){}
-     if(s.size() < value && isdigit(c)) //~ limitValue를 설정
+     if(s.size() < value && isdigit(c)) //~ set limitValue
        return true;
      return false;
    }
@@ -79,9 +76,9 @@
    }
    ````
 
-   객체에 대한 정책의 변경이 가능함.
+Change of policy about object is possible  
+It is called Strategy pattern
 
-   전략 패턴이라고 부름.
 
 ​	
 
