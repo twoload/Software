@@ -1,7 +1,9 @@
 # Design Pattern C++
 ----------
 
-* Author : CODENURI lecture book
+* Author : seokmin.kang 
+* email : smkang@codenuri.co.kr
+* company : CODENURI
 * Date : 2017.7.7
 
 # Separation of between things to be changed and not changed
@@ -79,6 +81,4 @@ It is the chanse of class itself not object
 Change of policy about object is possible  
 It is called Strategy pattern
 
-
-​	
 
