@@ -1,9 +1,18 @@
+# SSL example
+* https://aticleworld.com/ssl-server-client-using-openssl-in-c/
+* gethostbyname("localhost"), gethostbyname("127.0.0.1")
+
+# wireshark 
+## install and capture localhost packet
+* https://osqa-ask.wireshark.org/questions/7523/ubuntu-machine-no-interfaces-listed
+
+
 # ubuntu install
 ## keyboard hangul 101/104 choice
 * 한/영 전환 키 사용시 필요함. 
-* Region & Launguage -> Input Source: Korean Hangul 추가
-* terminal > ibus-setup > input method > Korean Hangul 추가  
-** Etc > Start in Hangul mode 선택
+* Region & Launguage -> Input Source: Korean Hangul add
+* terminal > ibus-setup > input method > Korean Hangul add
+** Etc > Start in Hangul mode 
 
 
 # Citrix Receiver install
