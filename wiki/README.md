@@ -1,3 +1,21 @@
+# Ubuntu fix dependency problems
+```
+sudo apt-get clean
+sudo apt-get update
+sudo apt-get install -f
+sudo dpkg -a --configure
+sudo apt-get dist-upgrade
+
+// apt-get install -f should try to fix most issues,
+// but it won't fix everything.
+// dpkg will try to further configure the packges, 
+// The last command is to fully upgrade your system, including the linux kernel,
+// again, run these commands after evertying is done
+sudo apt-get install -f
+sudo dpkg -a --configure
+```
+
+
 # SSL example
 * https://aticleworld.com/ssl-server-client-using-openssl-in-c/
 * gethostbyname("localhost"), gethostbyname("127.0.0.1")
