@@ -1,8 +1,8 @@
 
 # Create static library using command line in Visual Studio
-* I tried to use command line tool because I failed to create static library in GUI interface.
-** I had to include stdafx.h in c source files. but I didn't know how to.
-*** Because stdafx.h is c++ file, it was difficult to adapt it to c codes.
+* I tried to use command line tool because I failed to create static library in GUI interface.  
+** I had to include stdafx.h in c source files. but I didn't know how to.  
+*** Because stdafx.h is c++ file, it was difficult to adapt it to c codes.  
 ```
 Windows > Developer Command Prompt for VS2017
 $ cl /c source/*.c /linclude /DMONGO_STATIC_BUILD /DMONGO_USE_LONG_LONG_INT 
