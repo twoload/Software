@@ -11,8 +11,8 @@ $ lib /out:MyBsonLib.lib *.obj
 I could get MyBsonLib.lib
 ```
 ref: 
-https://www.zealfortechnology.com/2013/08/create-c-program-static-library-command-line-windows.html
-https://docs.microsoft.com/en-us/cpp/build/reference/i-additional-include-directories?view=msvc-160
+https://www.zealfortechnology.com/2013/08/create-c-program-static-library-command-line-windows.html  
+https://docs.microsoft.com/en-us/cpp/build/reference/i-additional-include-directories?view=msvc-160  
 https://stackoverflow.com/questions/31763558/how-to-build-static-and-dynamic-libraries-from-obj-files-for-visual-c/31830252
 
 # Ubuntu fix dependency problems
