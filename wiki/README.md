@@ -49,6 +49,17 @@ sudo dpkg -a --configure
 * terminal > ibus-setup > input method > Korean Hangul add
 ** Etc > Start in Hangul mode 
 
+# Citrix Workspace install (better)  
+Because I can resize the screen, Citrix Receiver always displays full.  
+* Download Citrix Workspace  
+* Install: dpkg -i icaclient-xxxx.deb  
+* Execute .ica file  
+** But SSL error 9 happens.  
+*** https://forums.linuxmint.com/viewtopic.php?t=253175  
+*** reason: The problem is not inside Firefox. You have to make the Firefox certificates available to the Citrix receiver as well. The Citrix receiver does not look in the Firefox certificate directory.  
+*** ```sudo ln -s /usr/share/ca-certificates/mozilla/* /opt/Citrix/ICAClient/keystore/cacerts/```
+
+
 
 # Citrix Receiver install
 
