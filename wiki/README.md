@@ -1,4 +1,13 @@
 
+# How to create a shared directory between host pc and virtual pc (ubuntu)  
+* Create the shared directory  
+https://helpdeskgeek.com/virtualization/virtualbox-share-folder-host-guest/  
+* Permission Problem  
+https://stackoverflow.com/questions/26740113/virtualbox-shared-folder-permissions  
+Add yourself to the vboxsf group within the guest VM.  
+Run sudo adduser $USER vboxsf from terminal.  And Reboot.
+
+
 # Create static library using command line in Visual Studio
 * I tried to use command line tool because I failed to create static library in GUI interface.  
   * I had to include stdafx.h in c source files. but I didn't know how to.  
