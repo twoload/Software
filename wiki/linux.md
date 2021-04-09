@@ -15,11 +15,6 @@ sudo apt-get install -f
 sudo dpkg -a --configure
 ```
 
-
-# SSL example
-* https://aticleworld.com/ssl-server-client-using-openssl-in-c/
-* gethostbyname("localhost"), gethostbyname("127.0.0.1")
-
 # wireshark 
 ## install and capture localhost packet
 * https://osqa-ask.wireshark.org/questions/7523/ubuntu-machine-no-interfaces-listed
