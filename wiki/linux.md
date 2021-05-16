@@ -1,3 +1,19 @@
+# dns
+* no ip site
+* how to check dns : nslookup + sitename
+
+# apache install
+* https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+```
+$ sudo apt update
+$ sudo apt install apache2  
+$ sudo ufw enable (firewall)
+$ sudo ufw allow 'Apache'
+$ sudo ufw status
+$ sudo systemctl status apache2
+$ hostname -I
+$ http://192.168.xxx.xxx (in my webrowser) and I can see apache page
+```
 
 # How to create a shared directory between host pc and virtual pc (ubuntu)  
 * Create the shared directory  
