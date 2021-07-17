@@ -35,3 +35,8 @@ But it didn't use mutex lock.
 So double free happened  
 * improvement  
 i2c function uses mutex lock.  
+## memory corruption (2021)
+* It is important to find where the crash happens from crash log (call stack).
+* if crash happens, the process will die. 
+* So we can find the cause from the last printed log before die.
+* This problem was not hard to correct but finding the cause was difficult. 
