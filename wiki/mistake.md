@@ -1,6 +1,6 @@
 # message queue full  
-* cause
-msgrcv wasn't handled after msgsnd
+* cause  
+msgrcv wasn't handled after msgsnd  
 you can check with ```ipcs -q``` 
 
 # Deadlock 
