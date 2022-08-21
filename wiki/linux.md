@@ -1,3 +1,7 @@
+# git clone fail
+* error : server certificate verification failed. CAfile: none CRLfile: none  
+* solve : git config --global http.sslVerify false  
+
 # dpkg ("debconf: DbDriver "config": config.dat is locked by another process)
 * sudo fuser -v /var/cache/debconf/config.dat  
 * sudo kill PID
