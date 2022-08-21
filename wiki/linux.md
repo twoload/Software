@@ -1,3 +1,8 @@
+# dpkg ("debconf: DbDriver "config": config.dat is locked by another process)
+* sudo fuser -v /var/cache/debconf/config.dat  
+* sudo kill PID
+* https://askubuntu.com/questions/136881/debconf-dbdriver-config-config-dat-is-locked-by-another-process-resource-t
+
 # dns
 * no ip site
 * how to check dns : nslookup + sitename
