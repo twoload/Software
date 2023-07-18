@@ -122,4 +122,17 @@
   Book ---O  <--------------  )---- Library  (ball/socket)
          provided       required
   ```
-  
+* is_a : subclass
+* object diagram : runtime snapshot
+  ```
+  Professor : class
+  :Professor
+  ---------- : underline = instance/object
+  kim: Professor  = named object
+  ----------
+  ```
+* ```
+  Driver --- can drive (link) --- Car
+* Package : modeling element grouping
+  * offer namespace
+  * Package dependency : circular dependency should not happen
