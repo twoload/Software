@@ -146,6 +146,8 @@
   a.a1();
 
   ```
+  ![diagram](communication_diagram.jpg)
+
 # Unified Process (UP)
 * iterative : Analysis / Design / Programming
 * Martin Fowler, Robert Martin
