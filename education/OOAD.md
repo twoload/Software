@@ -136,3 +136,32 @@
 * Package : modeling element grouping
   * offer namespace
   * Package dependency : circular dependency should not happen
+* LifeLive
+# Communication Diagram, Sequence Diagram
+* ```
+  class A { void a1(){ b.b1(); c.c1();} }
+  class B { void b1(){ if color == red, c.c2(); else d.d1() }
+  class C { c1() { for(i=1; i<=n; i++) d.d2() }, c2(){} }
+  class D { d1() {}, d2() {c.c2()} }
+  a.a1();
+
+  ```
+# Unified Process (UP)
+* iterative : Analysis / Design / Programming
+* Martin Fowler, Robert Martin
+* Use Case, Domain Model
+* Iterative & Incremental
+* Architecutre-Centric
+* Use-Case Driven
+  * discipline
+* ```
+  Inception > Elaboration > Contruction > Transition
+  (Use Case)  (Domain Model)
+              (Design Model)
+  ```
+* Object Design : Rebecca Wirfs-Brock
+* C++ idioms : Jim coupline
+* Actor is anything outside SuD that interacts with SuD (System under Design)
+* Primary Actor, Supporint Actor (Indirection Layer)
+* Use Case : Goal Level Proper
+* Book : Writing Effective Use Cases
